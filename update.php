@@ -11,7 +11,6 @@ if (empty($_SESSION['user'])) {
  
 $id = $_POST['id'];
 if(empty($id)){
-    $_SESSION['user'] = $result['user'];
     header('location:index.php');
 } else {
   $row=$con->viewdata($id);
